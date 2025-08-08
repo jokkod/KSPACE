@@ -1,0 +1,18 @@
+programa {
+  funcao inicio() {
+    inteiro numero[10],i
+    inteiro somanumpar
+    somanumpar=0
+
+    para(i=0;i<10;i++){
+      escreva("Digite o seu ",i+1,"º número: ")
+      leia(numero[i])
+    }
+    para(i=0;i<10;i++){
+      se(i % 2 == 0){
+        somanumpar=somanumpar+numero[i]
+      }
+    }
+    escreva("Soma dos de todos os números pares é igual a: ",somanumpar)
+  }
+}
