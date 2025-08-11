@@ -11,7 +11,7 @@ programa {
   para (j = 0; j <= 1; j++)
 {
 
-  A = (i == 1)
+  A = (i == 0)
 
   B = (j == 1)
 
