@@ -15,7 +15,7 @@ programa {
 
   B = (j == 1)
 
-  escreva("\n ", A, "| ", B, " | ", (A ou B))
+  escreva("\n ", A, "| ", B, " | ", (A e B))
 }
 }  
 }
