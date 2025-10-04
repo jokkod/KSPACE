@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8ª questão</title>
+</head>
+<body>
+    <h1>Mostrador de Conversão de Distância</h1>
+    <input type="number" id="nmr" placeholder="Digite um número:">
+    <button onclick="converter()">Verificar</button>
+    <div ip="resultado"></div>
+
+    <script>
+        function converter(){
+            const metro= parseFloat(document.getElementById("nmr").value);
+
+            let Km= (metro/1000);
+            let Hm= (metro/100);
+            let Dam=(metro/10);
+            let mm= (metro*1000);
+            let cm= (metro*100);
+            let dm= (metro*10);
+
+            const mensagem= `A distância de ${metro} corresponde a:<br> ${Hm}Km<br> ${Dam}Km<br> ${dm}Km<br> ${cm}Km<br> ${mm}Km<br>`;
+            document.getElementById("resultado").innerHTML= mensagem;
+        }
+    </script>
+</body>
+</html>
