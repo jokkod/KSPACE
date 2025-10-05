@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2ª questão</title>
+    <title>12ª questão</title>
 </head>
 <body>
     <h1>Desconto Promocional com Desconto</h1>
     <p>*Desconto de 5%, em cada produto.</p>
     <input type="number" id="valor" placeholder="Digite o valor do produto:">
-    <button onclick="VerificarPromo()"></button>
+    <button onclick="VerificarPromo()">Verificar Desconto</button>
 
     <div id="resultado"></div>
 
@@ -17,11 +17,11 @@
         function VerificarPromo(){
             const precoinicio= parseFloat(document.getElementById("valor").value);
 
-            
+            let valordesconto= (precoinicio/100);
+            let novovalor= (precoinicio-valordesconto);
 
-
-
-
+            const mensagem= `Preço promocional: R$ ${novovalor}`;
+            document.getElementById("resultado").innerHTML= mensagem;
         }
     </script>
 </body>
